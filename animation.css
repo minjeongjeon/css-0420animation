@@ -1,0 +1,46 @@
+.wrapper {
+    width: 300px;
+    height: 300px;
+    border: 1px solid; 
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    /* 통합 */
+    /* animation: change_color 4s .2s  10
+    ease-in-out forwards normal; */
+}
+.wrapper:hover .photo{
+    animation: change_color 4s 0.1s 2 ease-in-out 
+    forwards normal;
+}
+/* @keyframes change_color {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+} */
+@keyframes change_color {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+        margin: 0 0 0 200px;
+    }
+    50% {
+        background-color: yellow;
+        margin: 200px 0 0 200px;
+    }
+    75% {
+        background-color: silver;
+        margin: 200px 0 0 0;  
+    }
+    100% {
+        background-color: blue;
+    }
+}
